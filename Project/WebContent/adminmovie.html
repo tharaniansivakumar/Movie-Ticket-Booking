@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Zoo Zoo</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="top">
+			<h1 id="title" class="hidden"><span id="logo">Thiru <span>Cinemas</span></span></h1>
+		</div>
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2>Add Movie</h2>
+			</div>
+			<label for="movie">Movie Name</label>
+			<br/>
+			<form action="movieadd" enctype="multipart/form-data"
+		accept-charset=utf-8 method="post">
+			<input type="text" name="movie">
+			<br/>
+			<label for="releasedate">Release Date</label>
+			<br/>
+			<input type="Date" name="releasedate">
+			<br/>
+			<label for="actor">Actor Name</label>
+			<br/>
+			<input type="text" name="actor">
+			<br/>
+			<label for="actress">Actress Name</label>
+			<br/>
+			<input type="text" name="actress">
+			<br/>
+			<label for="director">Director Name</label>
+			<br/>
+			<input type="text" name="director">
+			<br/>
+			<label for="screenstatus">Screen Status</label>
+			<br/>
+			<select required class="selectpicker show-tick" name="screenstatus">
+			<option value disabled="disabled" selected="selected">Pick a screen...</option>
+			<option data-icon="icon.png" value="SCREEN1">SCREEN1</option>
+			<option value="SCREEN2">SCREEN2</option>
+			<option value="SCREEN3">SCREEN3</option>
+			<option value="SCREEN4">SCREEN4</option>
+			</select>
+			<br/>
+			<label for="url">Browse</label>
+			<br/>
+			 <input type="file" name="url" id="url"> 
+			<br/>
+			<label for="fclass">First class</label>
+			<br/>
+			<input type="text" name="fclass" placeholder="Enter price">
+			<br/>
+			<label for="sclass">Second class</label>
+			<br/>
+			<input type="text" name="sclass" placeholder="Enter price">
+			<br/>
+			<label for="tclass">Third class</label>
+			<br/>
+			<input type="text" name="tclass" placeholder="Enter price">
+			<br/>
+			<input type="submit" value="ADD">
+		</div>
+	</div>
+</body>
+
+<script>
+	$(document).ready(function () {
+    	$('#logo').addClass('animated fadeInDown');
+    	$("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		$('label[for="username"]').addClass('selected');
+	});
+	$('#username').blur(function() {
+		$('label[for="username"]').removeClass('selected');
+	});
+	$('#password').focus(function() {
+		$('label[for="password"]').addClass('selected');
+	});
+	$('#password').blur(function() {
+		$('label[for="password"]').removeClass('selected');
+	});
+</script>
+<script src="js/jquery.min.js"></script>
+</html>

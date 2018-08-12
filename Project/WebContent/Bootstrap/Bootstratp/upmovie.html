@@ -1,0 +1,126 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<style>
+.mySlides {display:none;}
+h1 {
+    font-size: 40px;
+	font-weight: bold;
+	font-color: white;
+    font-style: italic;
+}
+#a
+{
+	border-radius:200px 200px 200px 200px ;
+}
+footer{
+padding:20px;
+background-color:grey;
+}
+
+#left {
+    float: right;
+    
+}
+.box
+{
+padding:18px;
+background-color:grey;
+border-radius:200px 200px 200px 200px ;
+text-decoration: none;
+}
+.box:hover
+{
+background-color:black;
+ text-decoration: none;
+}
+a{
+ text-decoration: none;
+text-color: white;
+}
+</style>
+</head>
+<body>
+<footer>
+<a href=".html" class="box" style="color:white" >Back</a>
+<a href="home.html" class="box" style="color:white">Home</a>
+<a href="mymovie.html" class="box" style="color:white">My Movies</a>
+<a href="upmovie.html" class="box" style="color:white">UpComing movies</a>
+<a href="login.html" class="box" style="color:white" id="left">Logout</a>
+</footer>
+
+
+
+
+
+
+
+<div class="w3-container ">
+  
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+
+	<div class="w3-content w3-section" style="max-width:500px">
+ 	 <img class="mySlides" src="u1.jpg" style="width:600px; height:700px;">
+  	<img class="mySlides" src="u12.jpg" style="width:600px; height:700px;">
+  	<img class="mySlides" src="u13.jpg" style="width:600px; height:700px;">
+	<img class="mySlides" src="u14.jpg" style="width:600px; height:700px;">
+	</div>
+
+  </div>
+
+  <div class="w3-third">
+
+	<div class="w3-content w3-section" style="max-width:500px">
+ 	 <img class="mySlides" src="u2.jpg" style="width:600px; height:700px;">
+  	<img class="mySlides" src="u22.jpg" style="width:600px; height:700px;">
+  	<img class="mySlides" src="u23.jpg" style="width:600px; height:700px;">
+	<img class="mySlides" src="u24.jpg" style="width:600px; height:700px;">
+	<img class="mySlides" src="u25.jpg" style="width:600px; height:700px;">
+	</div>
+    
+  </div>
+
+  <div class="w3-third">
+	<div class="w3-content w3-section" style="max-width:500px">
+ 	 <img class="mySlides" src="u3.jpg" style="width:600px; height:700px;">
+  	<img class="mySlides" src="u32.jpg" style="width:600px; height:700px;">
+  	<img class="mySlides" src="u33.jpg" style="width:600px; height:700px;">
+	<img class="mySlides" src="u34.jpg" style="width:600px; height:700px;">
+	<img class="mySlides" src="u35.jpg" style="width:600px; height:700px;">
+	</div>
+  
+  </div>
+<div class="w3-third">
+	<div class="w3-content w3-section" style="max-width:500px">
+ 	 <img class="mySlides" src="u4.jpg" style="width:600px; height:700px;">
+  	<img class="mySlides" src="u42.jpg" style="width:600px; height:700px;">
+  	<img class="mySlides" src="u43.jpg" style="width:600px; height:700px;">
+	<img class="mySlides" src="u44.jpg" style="width:600px; height:700px;">
+	<img class="mySlides" src="u45.jpg" style="width:600px; height:700px;">
+	</div>    
+  </div>
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

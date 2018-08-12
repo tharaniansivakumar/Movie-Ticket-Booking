@@ -1,0 +1,75 @@
+body{
+	background-color: #442d4b;
+	color: white;
+}
+
+form h1{
+	text-align: center;
+}
+
+.fleft{
+	float: left;
+}
+
+.fright{
+	float: right;
+}
+
+.clear-fix{
+	clear: both;
+}
+
+.pad{
+	padding-right: 250px;
+}
+
+.submitbut{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+input{
+	width: 350px;
+}
+
+select{
+	width: 150px;
+}
+
+header img{
+	width: 200px;
+}
+
+header ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 15px;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #ffcb57;
+}
+
+form{
+	width: 500px;
+	margin: 0 auto;
+}
+
+form div{
+	padding-bottom: 10px;
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+}
+
+footer a img{
+	width: 50px;
+	height: 50px;
+}
+
+footer img{
+	height: 50px;
+}

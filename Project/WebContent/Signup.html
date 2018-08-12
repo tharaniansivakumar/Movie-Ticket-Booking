@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+
+  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="js/bootstrap.min.js">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>THIRU cinemas</title>
+  <link rel="shortcut icon"  href="nm.png">
+</head>
+
+
+
+<style type="text/css">
+    #form .form-group label.error {
+    color:#CC2EFA;
+   display: inline-block;
+    margin: 0px 0 0px 0px;
+    padding: 0;
+    text-align: left;
+    }
+
+
+#jeeva{ 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: black;
+  padding: 2rem;
+  border-radius: 50px 50px 50px 50px;
+  width: 33%;
+  margin:2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+ 
+a {
+  display: inline-block;
+  color: #fff;
+  width:150px;
+  text-decoration: none;
+  padding: .5rem;
+  transition: .5s background; 
+}
+
+a:hover{
+	background:black;
+}
+
+
+.group {
+    position: relative;
+    margin: 40px 0;
+    
+}
+.bar {
+    position: relative;
+    display: block;
+    width: 320px;
+}
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #2196F3;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  left: 0%;
+}
+input, textarea {
+    background: white;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 320px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #c6c6c6;
+}
+normalize.css:269
+button, input {
+}
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+normalize.css:270
+button, hr, input {
+    overflow: visible;
+}
+
+.h2, h2 {
+    font-size: 20px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: ;
+    font-weight: 700;
+    color : floralwhite;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.4285;
+    background-image: none;
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+    box-shadow: inset 0px 0px 0px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+</style>
+<script type="text/javascript">
+  function validateForm()
+          {
+            var pswd1=document.form.pswd1.value;
+            var pswd2=document.form.pswd2.value;
+            var number=document.form.mobile.value;
+            if(isNaN(number))
+            {
+              alert("Please Enter Numbers Only");
+              document.form.mobile.focus();
+              return false();
+            }
+            if(number.length < 10)
+            {
+              alert("Your Mobile Number Should Be 10 Digit");
+              document.form.mobile.focus();
+              return false;
+            }
+            if(pswd1==pswd2)
+            {
+              alert("Yes Your Password is Same");
+              return true();
+            }
+            else
+            {
+              alert("Your Password Should be same");
+              document.form.focus();
+              return false();
+            }
+          }
+  (function ($, W, D)
+  {
+  var JQUERY4U = {};
+  JQUERY4U.UTIL =
+      {
+          setupFormValidation: function ()
+          {
+          $("#myForm").validate({
+              rules: {
+              name: "required",
+              
+              phone: {
+                      required: true,
+                       minlength: 10,
+                       pattern: [/^[7-9]{1}[0-9]{9}$/], 
+                  },
+              email: {
+                      required: true,
+                      email: true,
+                     // pattern: [/^[a-z][A-Z]]
+                  },
+              
+              min_length:{
+                      required: true,
+                      minlength: 3
+                  },
+              number: {
+                  digits: true,
+                  required:true,
+                  minlength:10
+                  }
+              },
+              messages: {
+              name: "Please Enter Name",
+              phone: "Please Enter Valid Mobile Number",
+              email: "Please Enter valid Email",
+            
+              age:"Please enter valid age",
+              number: "Please Enter Only Digits",
+             
+              },
+              submitHandler: function (form) {
+              form.submit();
+              }
+          });
+        }
+      }
+  //when the dom has loaded setup form validation rules
+  $(D).ready(function ($) {
+      JQUERY4U.UTIL.setupFormValidation();
+  });
+  })(jQuery, window, document);
+
+
+
+
+
+
+</script>
+
+<body background="images/ad.jpg">
+
+
+ 
+
+<div id="jeeva">
+<br>
+<br>
+
+<div class="container">
+
+
+
+
+      <form class="form-horizontal" name="form" role="form" action="addcustomer" method="post" style="width:30%" onsubmit="return validateForm()">
+          <div class="form-group">
+              
+                  <center> <i><h1 style="color:floralwhites">Create Account</h1></i></center> 
+                   
+              
+
+          <div class="form-group">
+            <h4><label>First Name *</label></h4>
+              <h3><input type="text" class="form-control" placeholder="Enter First name" name="firstname" required></h3>
+          </div>
+          <div class="form-group">
+              <h4><label>Last Name *</label></h4>
+              <input type="text" class="form-control" placeholder="Enter Last name" name="lastname" required>
+          </div>
+          <div class="form-group">
+              <h4><label>Mobile No *</label></h4>
+              <input type="text" class="form-control"  placeholder="Enter Mobile Number" name="mobile" required>
+          </div>
+          <div class="form-group">
+              <h4><label>Age *</label></h4>
+              <input type="text" class="form-control"  placeholder="Enter Age" name="age" required>
+          </div>
+          <div class="form-group">
+              <h4><label>DateOfBirth *</label></h4>
+              <input type="date" class="form-control"  placeholder="Enter DateOfBirth" name="date" required>
+          </div>
+           <div class="form-group">
+              <h4><label>Email *</label></h4>
+              <input type="text" class="form-control"  type="email" placeholder="Enter Email-Id" name="email" required>
+          </div>
+          <div class="form-group">
+              <h4><label>City *</label></h4>
+              <input type="text" class="form-control"  placeholder="Enter City" name="city" required>
+          </div>
+          <div class="form-group">
+              <h4><label>Password *</label></h4>
+              <input type="password" class="form-control"  placeholder="Enter Password" name="pswd" required>
+          </div>
+          
+             </i>       
+
+                </div>
+                <div class="clearfix">
+            <center>
+              
+                        </br><button style="width: 50%" type="submit" class="btn btn-success">Submit</button>
+          
+          
+            </center>
+            </div>
+          </div>
+      </form>
+      </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</div>
+
+
+</body>
+</html>

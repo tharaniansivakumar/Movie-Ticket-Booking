@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>cinemas</title>
+  <link rel="shortcut icon"  href="nm.png">
+</head>
+<style>
+
+
+
+#jeeva{ 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  border-radius: 50px 50px 50px 50px;
+  margin:2rem;
+  float: right;
+  font-size: 1.2rem;
+}
+ 
+a {
+  display: blue;
+  color: #fff;
+  width:150px;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .5s background; 
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.4285;
+    color: white;
+    background-color: #fff;
+    background-image: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+a:hover{
+	background:black;
+}
+#j{
+  background-color: transparent;
+}
+#s{
+  display: inline;
+  font-size: 20px;
+  border-radius:50px 20px 50px 20px;
+}
+
+</style>
+
+<body  background="images/b1.jpg">
+
+<i>
+<h1 align="center" style="color: yellow ; font-family: serif" >Thiru Cinemas</h1></i>
+
+<div id="jeeva">
+<br>
+<br>
+
+<div class="container">
+
+
+
+
+      <form class="form-horizontal" role="form" action ="log" method="post" style="width:30% ">
+          <div class="form-group">
+              <h3><label>User Name</label></h3>
+              <h2><input type="text" class="form-control" id="j" placeholder="Enter Username" name="uname" required></h2>
+          </div>
+          <div class="form-group">
+              <h3><label>Password</label></h3>
+              <h2><input type="password" class="form-control" id="j" placeholder="Enter Password" name="pswd" required></h2>
+          
+         <h4> 
+        </div>
+                    <div class="clearfix">
+                        </br><button style="width: 50%" type="submit" class="btn btn-success">Login</button>
+          </div>
+          
+          </div></br>
+                    <p style="font-size: 20px">Are you New User? <b><a href="Signup.html">Click here.</a></b>
+                      <div id="s"><br><a href="changepassword.html">Forgot Password.</a>
+                      <a href="admin.html">Admin Login.</a></div></p>
+                </div>
+                
+      </form>
+      </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</div>
+
+
+</body>
+</html>

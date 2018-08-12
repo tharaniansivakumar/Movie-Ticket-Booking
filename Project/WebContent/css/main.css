@@ -1,0 +1,94 @@
+body{
+  background-color: #442d4b;
+  color:white;
+}
+
+.fleft {
+  float:left;
+}
+
+.fright {
+  float:right;
+}
+
+header img {
+  width:200px;
+  height:50px;
+  margin:28px;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  display:inline-block;
+}
+
+header ul li a {
+  text-decoration:none;
+  color:#ffcb57;
+  padding:10px 15px;
+}
+
+.gap {
+  clear:both;
+}
+a {
+  color:white;
+  text-decoration: none;
+  padding-left:28px;
+}
+.test {
+  padding-left:28px
+}
+.coverimg {
+  background: url(../images/movie.jpeg) no-repeat;
+  padding:-5px;
+  width: 100%;
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+  background-attachment: fixed;
+}
+section h4 {
+  color:#ffcb57;
+  padding:28px;
+}
+section p{
+  color:white;
+  padding:28px;
+}
+aside h4 {
+  color:#ffcb57;
+  padding:28px;
+}
+.fleft {
+  float:left;
+}
+
+.fright {
+  float:right;
+}
+.gap {
+  clear:both;
+}
+
+.pad{
+  padding-right:55px;
+}
+div aside ul {
+  list-style-type: none;
+  color:white;
+}
+div aside ul li{
+  padding-top:1px;
+}
+footer {
+  height:70px;
+  background-color:black;
+  padding-top: 20px;
+  margin:-7px;
+  margin-bottom:-7px;
+}
+footer a{
+  padding:8px;
+}

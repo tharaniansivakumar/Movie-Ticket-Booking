@@ -1,0 +1,125 @@
+body{
+  background-color: #442d4b;
+  color: white;
+}
+.fleft{
+  float:left;
+}
+.fright{
+  float:right;
+}
+.clear-all{
+  clear: both;
+}
+header img{
+  width: 200px;
+  padding: 20px;
+}
+
+footer img{
+  width: 200px;
+  padding: 20px;
+}
+footer .social{
+  width:30px;
+  padding: 10px;
+}
+footer{
+  background-color: black;
+}
+header ul li a{
+  color: #ffcb57;
+  text-decoration: none;
+}
+header ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+form{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+  text-decoration-style: dashed;
+}
+input,textarea {
+  width: 500px;
+  padding: 5px 0 5px 0;
+  background-color: #442d4b;
+  color: white;
+  border: 2px solid white;
+}
+select{
+  width: 232px;
+  padding: 5px 0 5px 0;
+  background-color: #442d4b;
+  color: white;
+  border: 2px solid white;
+}
+.form-label{
+  padding: 2px 0 2px 0;
+}
+.form-group{
+  padding: 5px 0 5px 0;
+}
+.btn{
+  padding: 5px;
+  background-color: #ffcb57;
+  width: 100px; 
+  margin-left: 200px;
+  color: white;
+  border: none;
+}
+.movie{
+  margin: 10px 5px 5px 5px;;
+  display: inline-block;
+  width:200px;
+}
+.movieThumb{
+  width: 170px;
+  height: 250px;
+}
+a:visited{
+  text-decoration: none;
+  color: #ffcb57;
+}
+a:link{
+  text-decoration: none;
+  color: #ffcb57;
+}
+.movie-group{
+  width: 1120px;
+  margin: 20px auto 0 auto;
+}
+.star{
+  width: 28px;
+  padding: 3px;
+}
+.text{
+  padding: 5px;
+}
+h2{
+  font-size: 30px;
+}
+.movie-full{
+  display: inline-block;
+  border:2px solid   #ffcb57;
+}
+
+.poster{
+  width: 420px;
+  height:450px;
+}
+.title{
+  display: inline-block;
+  margin: 0 0 0 30px;
+}
+.desc{
+  margin-top: 20px;
+  color: #ffcb57;
+  width:450px;
+}
